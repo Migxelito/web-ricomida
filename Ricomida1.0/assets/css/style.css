@@ -1,0 +1,182 @@
+
+/* Manejando tipogfrafia de la letra M o logo */
+.Lobsteri{
+    font-family: 'Lobster';
+    font-size: 50px;
+}
+/* Fin Estilos del NAVBAR */
+img {
+    max-width: 100%;
+    max-height: 100%;
+   }
+  .fontbarra {
+    font-family:'cabin';
+    font-size: 16pt;
+
+  } 
+  .pizza{
+    font-family:'cabin';
+    font-weight: bold;
+
+  }
+
+  .botones{
+    padding-left: 55px;
+    padding-right: 55px;
+
+  }
+
+
+
+  .ingridient{
+    font-family: 'cabin';
+    font-size: 20pt;
+    align-items: left;
+  }
+
+
+  
+  .divf2{
+    background-color: black;
+  }
+
+
+
+  .carousel-indicators li{
+    width:20px; 
+    height:20px;  
+    border-radius: 50%; 
+  }
+  .carousel-indicators{
+    bottom: -20px;
+  }
+
+
+
+
+
+
+
+/* usando media para cuando se achique la pagina le de otras medidas */
+
+/* aca se agrega una barra negra sobre la imagen principal de pizza que aparece desde los 992 pixeles hacia abajo y desaparece desde los 992 pixeles hacia arriba */
+  @media screen and (min-width: 992px) {
+    .barranegra {
+      display: none;
+    }
+  }
+
+/* el texto pizza tiene un tamaño de 40 pixeles despues de 375px (iphone 5 segun maqueta) y 25 px antes de eso y un texto centrado */
+
+  @media screen and (min-width: 375px) {
+    .pizza {
+      font-size: 40pt;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .pizza {
+      font-size: 25pt;
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+
+
+/* lo mismo que el texto arriba, al poner el tamaño de iphone SE la imagen de la pizza se achicara segun la maqueta  */
+
+  @media screen and (min-width: 375px) {
+    .imagenpizza {
+width: 20vw;    }
+  }
+
+  @media screen and (max-width: 376px) {
+    .imagenpizza {
+      height: 192pt;
+      width: 246pt;
+      left: 15pt;
+}
+  }
+
+/* el h3 de 110 min tambien ajustamos sus valores con las distintas dimensiones */
+
+  @media screen and (min-width: 375px) {
+    h3 {
+      font-size: 20pt;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    h3 {
+      font-size: 16pt;
+      text-align: center;
+      padding-top: 15px;
+    }
+  }
+
+  /* el h2 RECETAS RELACIONADAS tambien ajustamos sus valores con las distintas dimensiones */
+
+  @media screen and (min-width: 375px) {
+    h2 {
+      font-size: 40pt;
+      padding-top: 65px;
+      font-weight: bold;
+
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    h2 {
+      font-size: 25pt;
+      text-align: center;
+      padding-top: 15px;
+      font-weight: bold;
+
+    }
+  }
+
+  
+  
+/* el carrusel desaparece en version IPHONE SE, sobre los 376 pixeles aparecera  */
+
+  @media screen and (max-width: 376px) {
+    .carousel-inner {
+     display: none;    }
+  }
+
+
+/* esconde parte del texto de las cards */
+
+
+  @media screen and (min-width: 375px) {
+    .escondertextocartas {
+font-family: 'cabin';
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .escondertextocartas {
+display: none;
+
+    }
+  }
+
+/* ajusta el tamaño de las cards en distintas dimensiones */
+ 
+    
+    @media screen and (min-width: 375px) {
+      .card-deck {
+        width: 80%;
+        height: 50%;
+        padding-left: 20%;  }
+    
+    }
+  
+    @media screen and (max-width: 375px) {
+      .card-deck {
+        width: 100%;
+        height: 100%;
+      }
+  
+      
+    }
